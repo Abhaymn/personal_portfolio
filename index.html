@@ -1,9 +1,12 @@
 <!DOCTYPE html>
 <html>
     <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <link rel="stylesheet" href="style.css" >
 
         <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
     </head>
     <body>
@@ -19,6 +22,8 @@
                 <a href="#projects">Projects</a>
                 <a href="#contact">Contact</a>
 
+                <span class="active-nav"></span>
+
             </nav>
         </header>
 
@@ -30,18 +35,20 @@
                 </div>
 
                 <div class="btn-box">
-                    <a href="#" class="btn">Hire Me</a>
-                    <a href="#" class="btn">Lets Talk</a>
+                    <a href="#contact" class="btn">Hire Me</a>
+                    <a href="https://wa.me/qr/74UHR5OX4CBOM1" class="btn">Lets Talk</a>
 
                 </div>
+
+                
             </div>
 
             <div class="home-sci">
-                <a href="#"><i class='bx bxl-facebook' ></i></a>
-                <a href="#"><i class='bx bxl-linkedin' ></i></a>
-                <a href="#"><i class='bx bxl-github' ></i></a>
+                <a href="https://wa.me/qr/74UHR5OX4CBOM1"><i class='bx bxl-whatsapp'></i></a>
+                <a href="https://www.linkedin.com/in/abhay-krishna-335b10217/"><i class='bx bxl-linkedin' ></i></a>
+                <a href="https://github.com/"><i class='bx bxl-github' ></i></a>
             </div>
-
+          
             <div class="home-imgHover"></div>
         </section>
 
@@ -61,7 +68,7 @@
                     After my studies, I gained experience in HTML, CSS, JavaScript, and React, and I have completed several projects individually. I am always eager to learn and expand my skills and knowledge of the latest web development technologies and trends.
                 </p>
                 <div class="btn-box btns">
-                    <a href="#" class="btn">Read more</a>
+                    <a href="cv/ABHAYresume.pdf" download class="btn">Download CV</a>
                 </div>
             </div>
         </section>
@@ -69,7 +76,7 @@
        <!-- skills -->
 
         <section class="skills" id="skills">
-            <h2 class="heading">My <span>Skills</span></h2>
+            <h2 class="heading1">My <span>Skills</span></h2>
 
             <div class="skills-row">
                 <div class="skills-column">
@@ -142,10 +149,115 @@
             </div>
         </section>
 
+        <!-- projects -->
+
+        <section class="projects" id="projects">
+            <div class="max-width">
+            <h2 class="heading1">My <span>Projects</span></h2>
+            <div class="pro-content">
+                <div class="card">
+                    <a href="https://github.com/Abhaymn/ExpenseTrackerProject" >
+                    <div class="box">
+                        <div class="text">Expense Tracker</div>
+                        <p>Allows users to easily track their daily expenses. It has a user-friendly interface and offers various features such as adding, editing, and deleting expenses, categorizing expenses</p>
+                    </div>
+                    </a>
+                </div>
+
+                <div class="card">
+                    <a href="https://github.com/Abhaymn/E-Commerse" >
+                    <div class="box">
+                        <div class="text">E-Com Website</div>
+                        <p>It has authentication and sign-up of new users and allows users to buy online. It has a user-friendly interface and user can manage products in cart</p>
+                    </div>
+                    </a>
+                </div>
+
+                <div class="card">
+                    <a href="https://github.com/Abhaymn/Mail-Box" >
+                    <div class="box">
+                        <div class="text">Mail-Box Client</div>
+                        <p>Allows users to manage their emails in a more efficient and organized way, and offers various features such as viewing, composing, replying to, and deleting emails. </p>
+                    </div>
+                    </a>
+                </div>
+
+                <div class="card">
+                    <a href="#" >
+                    <div class="box">
+                        <div class="text">Portfolio Website</div>
+                        <p>A personal portfolio website showcasing my skills and It has offers features such as a home page, an about page,Skills level page,projects and a contact page.</p>
+                    </div>
+                    </a>
+                </div>
+
+                <div class="card">
+                    <a href="#" >
+                    <div class="box">
+                        <div class="text">Weather App</div>
+                        <p>Provides users with real-time weather information for their location or any other location of their choice.</p>
+                    </div>
+                    </a>
+                </div>
+
+            </div>
+            </div>
+        </section>
+
         <!-- Contact -->
 
+        <section class="contact" id="contact">
+            <h2 class="heading1">Contact <span>Me</span></h2>
+
+            <form id="submit-form" method="post" action="">
+                <div class="input-box">
+                    <div class="input-field">
+                        <input type="text" placeholder="Full Name" required name="">
+                        <span class="focus"></span>
+                    </div>
+                    <div class="input-field">
+                        <input type="text" placeholder="Email Address" required>
+                        <span class="focus"></span>
+                    </div>
+                </div>
+                <div class="input-box">
+                    <div class="input-field">
+                        <input type="number" placeholder="Mobile Number" required>
+                        <span class="focus"></span>
+                    </div>
+                    <div class="input-field">
+                        <input type="text" placeholder="Email Subject" required>
+                        <span class="focus"></span>
+                    </div>
+                </div>
+
+                <div class="textarea-field">
+                    <textarea name="" id="" cols="30" rows="10" placeholder="Message" required></textarea>
+                    <span class="focus"></span>
+                </div>
+
+                <div class="btn-box btns">
+                    <button type="submit" class="btn">Submit</button>
+                </div>
+                
+
+            </form>
+            
+        </section>
         
-        
+        <!-- footer -->
+
+        <footer class="footer">
+            <div class="footer-text">
+                <p>Created By Abhay | 2023 All Rights Reserved. </p>
+            </div>
+
+            <div class="footer-iconTop">
+                <a href="#"><i class='bx bx-up-arrow-alt' ></i></a>
+            </div>
+        </footer>
+
+        <script src="script.js"></script>
 
     </body>    
     
