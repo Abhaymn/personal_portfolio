@@ -41,19 +41,19 @@ window.onscroll=()=>{
 
 // rinth
 
-// $("#submit-form").submit((e) => {
-//     e.preventDefault();
-//     $.ajax({
-//       url: "https://script.google.com/macros/s/AKfycbwPFb9dBW7FXMoUzzkRAYyQKLulYz0hOrj_VfDmoeo6bfkSddKShMk6SeRreIoH22mBCQ/exec",
-//       data: $("#submit-form").serialize(),
-//       method: "post",
-//       success: function (response) {
-//         alert("Form submitted successfully");
-//         window.location.reload();
-//         //window.location.href="https://google.com"
-//       },
-//       error: function (err) {
-//         alert("Something Error");
-//       },
-//     });
-// })
+$("#submit-form").submit((e) => {
+    e.preventDefault();
+    $.ajax({
+      url: "https://script.google.com/macros/s/AKfycbxDkQr5Jm9jjOILStMI9IR8JCdgTnX4DqTQLGAsaVAzFWfNz9q57jqR7KBpB3cu41Yb/exec",
+      data: $("#submit-form").serialize(),
+      method: "post",
+      success: function (response) {
+        alert("Submitted successfully");
+        window.location.reload();
+        //window.location.href="https://google.com"
+      },
+      error: function (err) {
+        alert("Something Error");
+      },
+    });
+})
